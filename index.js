@@ -7,6 +7,8 @@ if (process.env.PACKAGEJSON_DIR) {
   process.chdir(process.env.GITHUB_WORKSPACE);
 }
 
+console.log("!!!!1" + process.env.PACKAGEJSON_DIR);
+console.log("!!!!2" + process.env.GITHUB_WORKSPACE)
 // Run your GitHub Action!
 Toolkit.run(async (tools) => {
   const pkg = tools.getPackageJSON();
